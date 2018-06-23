@@ -26,8 +26,8 @@ gulp.task('concatScripts', function () {
 //This task removes whitespaces, newlines etc. from JS scripts to decrease its size
 gulp.task('minifyScripts', ['concatScripts'], function(){
   return gulp.src('src/js/app.js')
-  .pipe(uglify())
-  .pipe(rename({suffix: '.min'}))
+  // .pipe(uglify())
+  // .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('dist/js'))
 })
 
