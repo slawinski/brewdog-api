@@ -1,0 +1,18 @@
+<div class="table-responsive">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Image</th>
+    </thead>
+    <tbody>
+      {{#each showResults}}
+        <tr>
+                <td>{{name}}</td>
+                <td>{{tagline}}</td>
+                <td>{{image_url}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+    <div>

@@ -1,0 +1,22 @@
+<section id="search">
+    <div>
+        <h3>Search for Beer</h3>
+    </div>
+    <form id="search-form" method="get" action="/search">
+        <div class="row">
+            <div class="col-sm-4 form-group">
+                <label for="id">ID:</label>
+                <input type="text" class="form-control" name="id" placeholder="Enter beer id" id="id">
+            </div>
+            <div class="col-sm-4 form-group">
+                <label for="name">Name:</label>
+                <select class="form-control" name="name" id="name">
+                    <option hidden></option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-default">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+    </form>
+</section>
